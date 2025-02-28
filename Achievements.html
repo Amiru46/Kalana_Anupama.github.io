@@ -9,177 +9,7 @@
     <meta name="author" content="Kalana Anupama">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #001a33 0%, #003366 100%);
-            color: white;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            padding: 60px 0;
-        }
-
-        h1, h2, h3, h4 {
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: #00aeff;
-            color: white;
-            padding: 10px 25px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-right: 10px;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #0096da;
-            transform: translateY(-3px);
-        }
-
-        .text-cyan {
-            color: #00aeff;
-        }
-
-        /* Header Styles */
-        header {
-            padding: 20px 0;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin-left: 30px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #00aeff;
-        }
-
-        /* Achievements Section */
-        .achievements {
-            text-align: center;
-        }
-
-        .achievements h2 {
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-
-        .certification-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .certification-card {
-            background-color: rgba(0, 51, 102, 0.7);
-            border-radius: 10px;
-            padding: 20px;
-            text-align: left;
-            transition: transform 0.3s ease;
-        }
-
-        .certification-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .certification-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .certification-card h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
-
-        .certification-card p {
-            font-size: 14px;
-            opacity: 0.8;
-        }
-
-        /* Footer */
-        footer {
-            background-color: rgba(0, 26, 51, 0.8);
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 14px;
-            opacity: 0.7;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .back-to-top {
-            background-color: #00aeff;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .back-to-top:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .certification-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="stylesofA.css">
 </head>
 <body>
     <!-- Header -->
@@ -188,7 +18,7 @@
             <nav>
                 <div class="logo">AMIRU.</div>
                 <ul>
-                    li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#education">Education</a></li>
                     <li><a href="index.html#skills">Skills</a></li>
@@ -223,54 +53,54 @@
                 <div class="certification-card">
                     <img src="Image/Cert/CertificateOfCompletion_Java Threads.png" alt="Certification 3">
                     <h3>Certificate Of Completion Java Threads</h3>
-                    <p>Issued by: linkedin learning</p>
+                    <p>Issued by: LinkedIn Learning</p>
                     <p>Date: December 2024</p>
-                </div>
-                <!-- Certification 3 -->
-                <div class="certification-card">
-                    <img src="Image/Cert/java 17.png" alt="Certification 3">
-                    <h3>Certificate Of Completion Learning Java 17</h3>
-                    <p>Issued by: linkedin learning</p>
-                    <p>Date: December 2024</p>
-                </div>
-                <!-- Certification 3 -->
-                <div class="certification-card">
-                    <img src="Image/Cert/CertificateOfCompletion_Learning Spring 6 with Spring Boot 3.png" alt="Certification 3">
-                    <h3>Certificate Of Completion Learning Spring 6 with Spring Boot 3</h3>
-                    <p>Issued by: linkedin learning</p>
-                    <p>Date: December 2024</p>
-                </div>
-                <!-- Certification 3 -->
-                <div class="certification-card">
-                    <img src="Image/Cert/CertificateOfCompletion_Programming Foundations ObjectOriented Design.png" alt="Certification 3">
-                    <h3>Certificate Of Completion Programming Foundations ObjectOriented Design</h3>
-                    <p>Issued by: linkedin learning</p>
-                    <p>Date: December 2024</p>
-                </div>
-                <!-- Certification 3 -->
-                <div class="certification-card">
-                    <img src="Image/Cert/CertificateOfCompletion_React Essential Training.png" alt="Certification 3">
-                    <h3>Certificate Of Completion React Essential Training</h3>
-                    <p>Issued by: linkedin learning</p>
-                    <p>Date: December 2024</p>
-                </div>
-                <!-- Certification 3 -->
-                <div class="certification-card">
-                    <img src="Image/Cert/CertificateOfCompletion_Spring Boot 2.0 Essential Training.png" alt="Certification 3">
-                    <h3>Certificate Of Completion Spring Boot 2.0 Essential Training</h3>
-                    <p>Issued by: linkedin learning</p>
-                    <p>Date: December 2024</p>
-                </div>
-                <!-- Certification 3 -->
-                <div class="certification-card">
-                    <img src="Image/Cert/Cloud Foundations for Aspiring IT Professionals Cartificate.png" alt="Certification 3">
-                    <h3>Cloud Foundations for Aspiring IT Professionals Cartificate</h3>
-                    <p>Issued by: NextGen Campus</p>
-                    <p>Date: August 2024</p>
                 </div>
                 <!-- Certification 4 -->
                 <div class="certification-card">
-                    <img src="assets/images/certification4.jpg" alt="Certification 4">
+                    <img src="Image/Cert/java 17.png" alt="Certification 4">
+                    <h3>Certificate Of Completion Learning Java 17</h3>
+                    <p>Issued by: LinkedIn Learning</p>
+                    <p>Date: December 2024</p>
+                </div>
+                <!-- Certification 5 -->
+                <div class="certification-card">
+                    <img src="Image/Cert/CertificateOfCompletion_Learning Spring 6 with Spring Boot 3.png" alt="Certification 5">
+                    <h3>Certificate Of Completion Learning Spring 6 with Spring Boot 3</h3>
+                    <p>Issued by: LinkedIn Learning</p>
+                    <p>Date: December 2024</p>
+                </div>
+                <!-- Certification 6 -->
+                <div class="certification-card">
+                    <img src="Image/Cert/CertificateOfCompletion_Programming Foundations ObjectOriented Design.png" alt="Certification 6">
+                    <h3>Certificate Of Completion Programming Foundations Object-Oriented Design</h3>
+                    <p>Issued by: LinkedIn Learning</p>
+                    <p>Date: December 2024</p>
+                </div>
+                <!-- Certification 7 -->
+                <div class="certification-card">
+                    <img src="Image/Cert/CertificateOfCompletion_React Essential Training.png" alt="Certification 7">
+                    <h3>Certificate Of Completion React Essential Training</h3>
+                    <p>Issued by: LinkedIn Learning</p>
+                    <p>Date: December 2024</p>
+                </div>
+                <!-- Certification 8 -->
+                <div class="certification-card">
+                    <img src="Image/Cert/CertificateOfCompletion_Spring Boot 2.0 Essential Training.png" alt="Certification 8">
+                    <h3>Certificate Of Completion Spring Boot 2.0 Essential Training</h3>
+                    <p>Issued by: LinkedIn Learning</p>
+                    <p>Date: December 2024</p>
+                </div>
+                <!-- Certification 9 -->
+                <div class="certification-card">
+                    <img src="Image/Cert/Cloud Foundations for Aspiring IT Professionals Cartificate.png" alt="Certification 9">
+                    <h3>Cloud Foundations for Aspiring IT Professionals Certificate</h3>
+                    <p>Issued by: NextGen Campus</p>
+                    <p>Date: August 2024</p>
+                </div>
+                <!-- Certification 10 -->
+                <div class="certification-card">
+                    <img src="assets/images/certification4.jpg" alt="Certification 10">
                     <h3>Database Management Certification</h3>
                     <p>Issued by: LinkedIn Learning</p>
                     <p>Date: July 2023</p>
