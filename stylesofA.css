@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
     color: #00aeff;
 }
 
-/* Header Styles */
+
 header {
     position: fixed;
     top: 0;
@@ -84,7 +84,7 @@ nav {
     cursor: pointer;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -111,10 +111,10 @@ nav {
     }
 }
 
-/* Achievements Section */
+
 .achievements {
     text-align: center;
-    padding-top: 100px; /* To account for the fixed header */
+    padding-top: 100px; 
 }
 
 .achievements h2 {
@@ -156,7 +156,7 @@ nav {
     opacity: 0.8;
 }
 
-/* Footer */
+
 footer {
     background-color: rgba(0, 26, 51, 0.8);
     padding: 20px 0;
@@ -191,7 +191,7 @@ footer p {
     transform: translateY(-5px);
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .certification-grid {
         grid-template-columns: 1fr;
