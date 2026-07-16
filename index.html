@@ -76,6 +76,24 @@ a:hover { color: #7FB8FF; }
 }
 .nav-contact:hover { background: color-mix(in oklab, var(--accent) 14%, transparent); color: var(--accent); }
 .accent-dot { color: var(--accent); }
+.nav-toggle {
+  display: none; background: none; border: none; cursor: pointer; padding: 8px;
+  color: var(--text); align-items: center; justify-content: center;
+}
+@media (max-width: 768px) {
+  .nav-toggle { display: inline-flex; }
+  .nav-links {
+    display: none; position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 0;
+    background: rgba(9, 13, 20, 0.97);
+    backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 8px 0 14px;
+  }
+  .nav.open .nav-links { display: flex; }
+  .nav-links .nav-link { padding: 13px 24px; font-size: 15px; }
+  .nav-links .nav-contact { margin: 10px 24px 0; text-align: center; }
+}
 
 /* ---------- Hero ---------- */
 .hero {
@@ -356,6 +374,9 @@ a:hover { color: #7FB8FF; }
 <nav class="nav">
   <div class="nav-inner">
     <a href="#home" class="nav-logo">AMIRU<span class="accent-dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg>
+    </button>
     <div class="nav-links">
       <a href="#about" class="nav-link">About</a>
       <a href="#experience" class="nav-link">Experience</a>
@@ -742,6 +763,20 @@ a:hover { color: #7FB8FF; }
     }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
   }
+
+  /* ---------- Mobile nav toggle ---------- */
+  var nav = document.querySelector('.nav');
+  var navToggle = document.getElementById('navToggle');
+  navToggle.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('.nav-links a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      nav.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 
   /* ---------- Hero name toggle (easter egg) ---------- */
   var altName = false;
